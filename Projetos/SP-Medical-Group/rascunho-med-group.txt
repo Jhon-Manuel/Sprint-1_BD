@@ -1,0 +1,55 @@
+Entidades e Campos
+======================
+Clinica
+ idClinica (FK)
+ nomefantasia
+ CNPJ
+ razao social
+ endereco
+ 
+Especialidades (tipoMedico)
+ idEspecialidade (PK)
+ tipoEspecialidade
+
+Medico
+ idMedico (PK)
+ CM
+ nome
+ email
+ idEspecialidade (FK)
+ idUsuario (FK)
+
+tipoUsuario 
+ idTipoUsario (PK)
+ tipoUsuario  
+
+Usuario (adm/med/pacien)
+ idUsuario (PK)
+ idTipoUsuario (FK)
+idClinica (FK)
+ email 
+ senha
+
+Pacientes (prontuário)
+ idPaciente (PK)
+ idUsuario (FK)
+ nome
+ email
+ dataNascimento
+ telefone
+ RG
+ CPF
+ endereco
+  
+Consultas
+ idConsulta (PK)
+ idprontuario (FK)
+ idMedico (FK)
+ dataConsulta
+ idSituacao (FK)
+
+Situacao
+ idSituacao (PK)
+ tipoSituacao
+
+

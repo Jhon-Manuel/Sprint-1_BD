@@ -1,0 +1,8 @@
+USE CATALOGO;
+
+INSERT INTO GENERO(nomeGenero)
+VALUES ('Romance')
+
+INSERT INTO FILME(nomeFilme,idGenero)
+VALUES ('D',NULL)
+

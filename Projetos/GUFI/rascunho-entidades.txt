@@ -1,0 +1,44 @@
+Como fazer a modelagem de um banco de dados
+
+separar td q e entidade e quais sao os campos
+==================================================
+
+
+tipoUsuario
+idUsuario (PK)
+idTipoUsuario (FK)
+nomeUsuario
+Email
+Senha
+
+Usuario
+idUsuario (PK)
+
+tipoEvento (categoria)
+idTipoEvento (PK)
+tituloTipoEvento
+
+evento
+idEvento (PK)
+idTipoEvento (FK)
+idInstituição (FK)
+nomeEvento
+descrição
+dataEvento (D/H)
+acessoLivre (1/0 )
+
+instituicao
+idInstituição (PK)
+cnpj
+nomeFantasia
+endereço
+
+presenca (convite/ingresso)    
+idPresença (PK)             
+IdUsuario (FK)       
+idEvento (FK)
+idSituação (FK)
+
+situação
+idSituação (PK)
+descrição (ag/rec/ap)
